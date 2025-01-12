@@ -29,7 +29,7 @@ let search = function (nums, target) {
         left = mid + 1;
       } else {
         // else target is in the left half
-        right = mid - 1;
+        right = nums.length - 1;
       }
     }
   }

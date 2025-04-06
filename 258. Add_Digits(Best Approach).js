@@ -13,3 +13,7 @@ let num = 38;
 let result = addDigits(num);
 
 console.log(result);
+
+// Time Complexity: O(1)
+
+// Space Complexity: O(1)

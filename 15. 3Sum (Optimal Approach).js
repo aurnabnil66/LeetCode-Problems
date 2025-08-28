@@ -39,9 +39,12 @@ let threeSum = function (nums) {
       } else {
         let lastLowOccurace = sortedNums[low];
         let lastHighOccurace = sortedNums[high];
+
+        // move low and high to avoid duplicates
         while (low < high && sortedNums[low] === lastLowOccurace) {
           low++;
         }
+
         while (low < high && sortedNums[high] === lastHighOccurace) {
           high--;
         }

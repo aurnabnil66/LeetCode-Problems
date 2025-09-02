@@ -61,9 +61,11 @@ let result = threeSum(nums);
 
 console.log(result);
 
+// ========================= Time and Space Complexity =========================
+
 // Time Complexity:
 // Sorting: O(nlogn)
 // Two-pointer iteration: O(n^2)
 // Overall: O(n^2)
 
-// Space Complexity: O(1)
+// Space Complexity: O(n) for output and sort

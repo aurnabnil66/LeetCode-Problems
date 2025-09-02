@@ -60,3 +60,9 @@ let target = 0;
 let result = fourSum(nums, target);
 
 console.log(result);
+
+// ========================= Time and Space Complexity =========================
+
+// Time: O(n^3) (two nested loops + two pointers)
+
+// Space: O(n) for sorting and result.

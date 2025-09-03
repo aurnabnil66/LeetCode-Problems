@@ -38,3 +38,9 @@ let target = 1;
 let result = threeSumClosest(nums, target);
 
 console.log(result);
+
+// ========================= Time and Space Complexity =========================
+
+// Time Complexity: O(n^2)
+
+// Space Complexity: O(1)

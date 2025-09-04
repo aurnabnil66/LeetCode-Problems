@@ -14,6 +14,7 @@ let threeSumClosest = function (nums, target) {
     while (left < right) {
       let currentSum = sortedNums[i] + sortedNums[left] + sortedNums[right];
 
+      // compare the minimum absolute difference with the target
       if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
         closestSum = currentSum;
       }
@@ -23,7 +24,7 @@ let threeSumClosest = function (nums, target) {
       } else if (currentSum > target) {
         right--;
       } else {
-        return currentSum;
+        return currentSum; // if the sum is equal to the target
       }
     }
   }
@@ -41,6 +42,6 @@ console.log(result);
 
 // ========================= Time and Space Complexity =========================
 
-// Time Complexity: O(n^2)
+// Time Complexity: sorting O(nlogn) + two-pointer iteration O(n^2) = O(n^2)
 
 // Space Complexity: O(1)

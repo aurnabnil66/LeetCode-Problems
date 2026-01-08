@@ -21,3 +21,17 @@ let s = "abbaca";
 let result = removeDuplicates(s);
 
 console.log(result);
+
+// ================== Time and Space Complexity ==================
+/*
+| Part of Algorithm                      | Time Complexity | Space Complexity |
+|----------------------------------------|-----------------|------------------|
+| Iterating through the string `s`       | O(n)            | O(1)             |
+| Stack push/pop operations              | O(n)            | O(n)             |
+| Joining stack into result string       | O(n)            | O(n)             |
+|----------------------------------------|-----------------|------------------|
+| Overall                                | O(n)            | O(n)             |
+
+Where:
+- n = length of the string `s`
+*/

@@ -32,3 +32,14 @@ let b = "1";
 let result = addBinary(a, b);
 
 console.log(result);
+
+/*
+| Aspect             | Complexity     | Explanation                                             |
+|--------------------|----------------|---------------------------------------------------------|
+| Time Complexity    | O(max(n, m))   | Each digit of both binary strings is processed once     |
+| Space Complexity   | O(max(n, m))   | Result array stores at most max(n, m) + 1 binary digits |
+|
+| Where:
+| n = length of binary string a
+| m = length of binary string b
+*/

@@ -23,3 +23,7 @@ let k = 1;
 let result = topKFrequent(nums, k);
 
 console.log(result);
+
+// Time Complexity: O(n log n) due to sorting
+
+// Space Complexity: O(n) for the map and result array

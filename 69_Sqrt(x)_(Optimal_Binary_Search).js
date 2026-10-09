@@ -25,3 +25,9 @@ let x = 10;
 let result = mySqrt(x);
 
 console.log(result);
+
+// --------------- Time Complexity ---------------
+// The binary search algorithm runs in O(log x) time complexity since we are halving the search space in each iteration.
+
+// --------------- Space Complexity ---------------
+// The space complexity is O(1) since we are using a constant amount of space regardless of the input size.

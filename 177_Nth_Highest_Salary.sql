@@ -42,6 +42,7 @@ select * from Employee;
 -- n <= 0 -> negative offset -> Postgres error "OFFSET must not be negative"
 create or replace function NthHighestSalary(n int) returns table (salary int) as $$
 begin
+    -- n cannot be 0 or 1 because offset cannot be negative
     if n < 1 then
         return;
     else

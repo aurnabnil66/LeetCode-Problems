@@ -42,11 +42,15 @@ select * from Employee;
 -- n <= 0 -> negative offset -> Postgres error "OFFSET must not be negative"
 create or replace function NthHighestSalary(n int) returns table (salary int) as $$
 begin
-  return query (
-    select distinct E.salary from Employee E 
-    order by E.salary desc
-    limit 1 offset n - 1
-  );
+    if n < 1 then
+        return;
+    else
+        return query (
+            select distinct E.salary from Employee E 
+            order by E.salary desc
+            limit 1 offset n - 1
+        );
+    end if;
 end;
 $$ language plpgsql;
 
